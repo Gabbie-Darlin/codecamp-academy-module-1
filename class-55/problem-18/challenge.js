@@ -1,3 +1,5 @@
+// Author: Gab-Darlin <Gabbie-Darlin>
+
 // Exercise 1 - Password Validation
 
 console.log("*********************");
