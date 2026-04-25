@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Switch Statement | Imperative Programming</title>
+
+    <link rel="stylesheet" href="./switch.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <h1>JavaScript Switch Statement</h1>
+        <p class="subtitle">
+            Imperative Programming – Control Flow
+        </p>
+    </header>
+
+    <main class="container">
+
+        <section class="lesson-section">
+            <h2>1. Introduction</h2>
+
+            <p>
+                In imperative programming, programs execute instructions step by
+                step. Often, we need to make decisions that change the execution
+                flow. Previously we used <strong>if / else</strong> statements to
+                handle these decisions.
+            </p>
+
+            <p>
+                When we need to compare a single variable against many possible
+                values, JavaScript provides a cleaner control structure called
+                <strong>the switch statement</strong>.
+            </p>
+        </section>
+
+        <section class="lesson-section">
+            <h2>2. What is the Switch Statement?</h2>
+
+            <p>
+                The <code>switch</code> statement evaluates an expression and
+                compares its value against multiple possible options called
+                <strong>cases</strong>. When a matching case is found, the
+                corresponding block of code executes.
+            </p>
+
+            <ul>
+                <li>The program evaluates an expression.</li>
+                <li>It compares the result with each case.</li>
+                <li>The matching case executes.</li>
+            </ul>
+
+        </section>
+
+        <section class="lesson-section">
+            <h2>3. Basic Syntax</h2>
+
+            <pre>
+                <code>
+                    switch (expression) {
+
+                        case value1:
+                            // code to execute
+                            break;
+
+                        case value2:
+                            // code to execute
+                            break;
+
+                        case value3:
+                            // code to execute
+                            break;
+
+                        default:
+                            // code if no case matches
+                    }
+                </code>
+            </pre>
+
+        </section>
+
+        <section class="lesson-section">
+
+            <h2>4. Example</h2>
+
+            <p>
+                This example determines the name of a day based on a numeric value.
+            </p>
+
+            <pre>
+                <code>
+                    const day = 3;
+
+                    switch (day) {
+
+                        case 1:
+                            console.log("Monday");
+                            break;
+
+                        case 2:
+                            console.log("Tuesday");
+                            break;
+
+                        case 3:
+                            console.log("Wednesday");
+                            break;
+
+                        case 4:
+                            console.log("Thursday");
+                            break;
+
+                        case 5:
+                            console.log("Friday");
+                            break;
+
+                        default:
+                            console.log("Invalid day");
+
+                    }
+                </code>
+            </pre>
+
+        </section>
+
+        <section class="lesson-section">
+
+            <h2>5. Understanding the Components</h2>
+
+            <div class="concept">
+
+                <h3>Expression</h3>
+                <p>
+                    The value that the switch statement evaluates.
+                </p>
+
+            </div>
+
+            <div class="concept">
+
+                <h3>Case</h3>
+                <p>
+                    Each possible value the expression might match.
+                </p>
+
+            </div>
+
+            <div class="concept">
+
+                <h3>Break</h3>
+                <p>
+                    Stops the execution of the switch block.
+                    Without it, the program continues executing the following cases.
+                </p>
+
+            </div>
+
+            <div class="concept">
+
+                <h3>Default</h3>
+                <p>
+                    Executes when no case matches the expression.
+                </p>
+
+            </div>
+
+        </section>
+
+        <section class="lesson-section">
+
+            <h2>6. Switch vs If-Else</h2>
+
+            <p>
+                Both structures allow programs to make decisions,
+                but <strong>switch</strong> is often more readable when comparing
+                the same variable against multiple constant values.
+            </p>
+
+            <pre>
+                <code>
+                    // Using if-else
+
+                    if (role === "admin") {
+                        console.log("Full access");
+                    } else if (role === "editor") {
+                        console.log("Edit content");
+                    } else if (role === "viewer") {
+                        console.log("Read only");
+                    }
+                </code>
+            </pre>
+
+            <pre>
+                <code>
+                    // Using switch
+
+                    switch (role) {
+
+                        case "admin":
+                            console.log("Full access");
+                            break;
+
+                        case "editor":
+                            console.log("Edit content");
+                            break;
+
+                        case "viewer":
+                            console.log("Read only");
+                            break;
+
+                    }
+                </code>
+            </pre>
+
+        </section>
+
+        <section class="lesson-section">
+
+            <h2>7. Best Practices</h2>
+
+            <ul class="best-practices">
+                <li>Always use <code>break</code> unless fall-through behavior
+                    is intended.</li>
+                <li>Keep case blocks small and readable.</li>
+                <li>Use meaningful variable names.</li>
+                <li>Always include a <code>default</code> case when possible.</li>
+            </ul>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+
+        <p>
+            Imperative Programming with JavaScript
+        </p>
+
+    </footer>
+
+</body>
+
+</html>

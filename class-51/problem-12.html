@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Algorithm Exercise - Loan Approval System</title>
+    <link rel="stylesheet" href="./problem-12.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🏦 Algorithm Exercise</h1>
+        <h2>Bank Loan Approval System</h2>
+
+        <p>
+            Design an algorithm that determines whether a bank customer qualifies
+            for a loan. If the loan is approved, the program must calculate the
+            maximum loan amount.
+        </p>
+
+        <section class="card">
+
+            <h3>Basic Requirements</h3>
+
+            <ul>
+                <li>Age must be between <strong>18 and 65</strong></li>
+                <li>Monthly salary must be <strong>greater than 0</strong></li>
+            </ul>
+
+            <p>If these conditions are not met, the program should show:</p>
+
+            <code>Invalid applicant data.</code>
+
+        </section>
+
+        <section class="card">
+
+            <h3>Employment Status</h3>
+
+            <p>The applicant must enter one of the following:</p>
+
+            <ul>
+                <li>employed</li>
+                <li>self-employed</li>
+                <li>unemployed</li>
+            </ul>
+
+            <p>If another value is entered:</p>
+
+            <code>Invalid employment status.</code>
+
+        </section>
+
+        <section class="card">
+
+            <h3>Credit Score Categories</h3>
+
+            <ul>
+                <li>750 or higher → 5 × salary</li>
+                <li>650 – 749 → 3 × salary</li>
+                <li>550 – 649 → 2 × salary</li>
+                <li>Below 550 → Loan rejected</li>
+            </ul>
+
+        </section>
+
+        <section class="card">
+
+            <h3>Self-Employed Rule</h3>
+
+            <p>
+                If the applicant is <strong>self-employed</strong>, the loan
+                amount must be reduced by <strong>20%</strong>.
+            </p>
+
+        </section>
+
+        <section class="card">
+
+            <h3>Unemployed Rule</h3>
+
+            <p>If the applicant is unemployed:</p>
+
+            <code>Loan rejected.</code>
+
+        </section>
+
+        <section class="card">
+
+            <h3>Your Tasks</h3>
+
+            <ol>
+                <li>Create the algorithm using JavaScript</li>
+                <li>Design the flowchart</li>
+                <li>Use nested conditionals</li>
+                <li>Validate all inputs</li>
+                <li>Calculate the maximum loan amount</li>
+            </ol>
+
+        </section>
+
+    </div>
+
+    <script type="application/javascript" src="./problem-12.js"></script>
+
+</body>
+
+</html>
