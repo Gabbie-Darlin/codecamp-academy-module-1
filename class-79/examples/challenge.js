@@ -20,7 +20,7 @@ const character = {
     },
     isAlive: true,
     signatureWeapons: "AMT Hardballer pistols",
-   creator: ["Dr Otto Wolfgang", "65", "Russian", "Genetics",]
+   creator: ["Dr Otto Wolfgang", "65", "Russian", "Genetics"]
 }
 
 
