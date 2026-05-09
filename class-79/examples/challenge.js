@@ -1,3 +1,6 @@
+
+// Putting into practice Objects by creating an object of a Video Game character 
+
 const character = {
     alias: "Hitman",
     number: "47",
