@@ -11,11 +11,9 @@ class Meal{
     }
 
     showInfomation() {
-        return{
-            name: this.name,
-            price: this.price,
-            category: this.category
-        };
+           console.log(`Name: ${this.name}`);
+           console.log(`Price: $ ${this.price} USD`);
+           console.log(`Category: ${this.category}`);  
     }
 
     prepareMeal() {
@@ -34,6 +32,12 @@ class Burger extends Meal {
         this.hasCheese = hasCheese;
     }
 
+    showInfomation() {
+        super.showInfomation();
+        console.log(`Has Cheese: ${this.hasCheese}`);
+    }
+
+
     prepareMeal() {
         return `Grilling the burger and preparing ingredients.`;
     }
@@ -47,6 +51,11 @@ class Pizza extends Meal {
         this.size = size;
     }
 
+    showInfomation() {
+        super.showInfomation();
+        console.log(`Size: ${this.size}`);
+    }
+
     prepareMeal() {
         return `Baking the pizza in the oven.`;
     }
@@ -58,6 +67,11 @@ class Salad extends Meal {
     constructor(name, price, category, dressing) {
         super(name, price, category);
         this.dressing = dressing;
+    }
+
+    showInfomation() {
+        super.showInfomation();
+        console.log(`Dressing: ${this.dressing}`);
     }
 
      prepareMeal() {
@@ -95,7 +109,7 @@ const menu = [burger, pizza, salad];
 //Loop to iterate through array and print results.
 menu.forEach((meal) => {
     console.log("=================================================");
-    console.log(meal);
+    meal.showInfomation();
     console.log(meal.prepareMeal());
     console.log("=================================================");
 });
